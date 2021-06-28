@@ -1,0 +1,198 @@
+@import "_NullStyle";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
+
+.container{
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   font-family: 'Roboto', sans-serif;
+   &__top {
+      background-color: #303030;
+   }
+
+   &__content {
+      padding: 34px 0px 23px;
+      &-inner{
+         display: flex;
+        justify-content: space-between;
+      }
+   }
+
+   &__logo {
+   }
+   &__btn {
+      float: right;
+      font-size: 18px;
+      color: rgb(50, 50, 50);
+      line-height: 36px;
+      background-color: #ffc222;
+      padding: 5px 20px 4px 50px;
+      position: relative;
+      display: block;
+      &::before {
+         content: "\f0b1";
+         font-family: 'icomoon';
+         position: absolute;
+         left: 22px;
+         color: #1b1b1b;
+      }
+   }
+      &__contacts {
+         &::after{
+         content: '';
+         clear: both;
+         display: block;
+      }
+}
+
+&__phone,
+&__email{
+   color: #cbcacb;
+   letter-spacing: 0.25px;
+   line-height: 45px;
+   position: relative;
+}
+&__phone {
+   padding-left: 20px;
+   padding-right: 30px;
+   &:before{
+      content: "\f095";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      color: #ffc222;
+   }
+}
+&__email {
+   padding-left: 24px;
+   &::before{
+      content: "\f003";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      color: #ffc222;
+   }
+   }
+}
+
+.menu {
+   & li{
+      &+li{
+         padding-left: 10px;
+      }
+   display: inline-block;
+   }
+   & a {
+      font-family:  'Roboto', sans-serif;
+      color: #323232;
+      font-size: 16px;
+      line-height: 36px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      transition: all .3s;
+      &:hover{
+         border-color: #ffc222;
+      }
+   }
+}
+#modal{
+   display: none;
+}
+.slider {
+background-image: url(../img/slieder-fon.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+min-height: 500px;
+&__content {
+   max-width: 660px;
+   margin: 0 auto;
+}
+&__item {
+   text-align: center;
+   padding-top: 130px;
+}
+&__title {
+   text-transform: uppercase;
+   color:#ffffff;
+   font-size: 30px;
+   line-height: 36px;
+   letter-spacing: 0.5px;
+   font-weight: 500;
+   margin-bottom: 22px;
+   font-family: 'Roboto', sans-serif;
+    }
+&__text{
+   font-size: 18px;
+   line-height: 24px;
+   color: #afaeaf;
+   margin-bottom: 31px;
+    }
+
+   &__inner {
+      position: relative;
+   }
+   
+   }
+  
+   .slick{
+      &-btn {
+         position: absolute;
+         top: 70%;
+         z-index: 3;
+         width: 40px;
+         height: 40px;
+         border: 1px solid #ffffff;
+         position: relative;
+         &::before {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50% - 50%);
+         font-family: 'icomoon';
+         }
+      }
+      &-next {
+         right: 0;
+         &::before {
+            content: "\f105";
+         }
+      }
+      &-prev{
+         left: 0;
+         &::before {
+            content: "\f104";
+         }
+      }
+     
+   }
+    
+    
+  .default-btn {
+      display: inline-block;
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 24px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      padding: 8px 30px 8px 26px;
+      border: 1px solid #ffc222;
+      border-right-width: 20px;
+      position: relative;
+      &::after {
+       content: "\f105";
+       font-family: 'icomoon';
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       right:  -12px;
+      }
+
+   }
+   
+    
+
