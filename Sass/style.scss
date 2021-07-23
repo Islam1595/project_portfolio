@@ -1,4 +1,5 @@
 @import "_NullStyle";
+@import "_media";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
 
@@ -873,9 +874,21 @@ min-height: 500px;
    }
 }
 
-   
+
 #modal {
+   width: 300px;
    & input {
     display: block;
-    width: 100%; }
-}п
+    width: 100%;
+   margin-bottom: 20px;
+   padding: 0 10px;
+   outline: none;
+   border: 1px solid #595959;
+   height: 40px;
+   &[type="submit"] {
+      background-color: #ffc222;
+      border: none;
+   }
+   }
+
+}

@@ -805,7 +805,19 @@ a {
   line-height: 24px;
 }
 
+#modal {
+  width: 300px;
+}
 #modal input {
   display: block;
   width: 100%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid #595959;
+  height: 40px;
+}
+#modal input[type=submit] {
+  background-color: #ffc222;
+  border: none;
 }
